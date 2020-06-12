@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0457DBA2493173100DA0F61 /* iPhoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0457DB92493173100DA0F61 /* iPhoneManager.swift */; };
+		A0457DC924932BA600DA0F61 /* PCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0457DC824932BA600DA0F61 /* PCManager.m */; };
+		A0457DCD24932BBD00DA0F61 /* iPhoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0457DCB24932BBD00DA0F61 /* iPhoneManager.swift */; };
 		A0DEAD762121714D0050EC0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DEAD752121714D0050EC0B /* AppDelegate.m */; };
 		A0DEAD792121714D0050EC0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DEAD782121714D0050EC0B /* ViewController.m */; };
 		A0DEAD7C2121714D0050EC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DEAD7A2121714D0050EC0B /* Main.storyboard */; };
@@ -17,8 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A0457DB82493173100DA0F61 /* YKW-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YKW-Bridging-Header.h"; sourceTree = "<group>"; };
-		A0457DB92493173100DA0F61 /* iPhoneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneManager.swift; sourceTree = "<group>"; };
+		A0457DC724932BA600DA0F61 /* PCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCManager.h; sourceTree = "<group>"; };
+		A0457DC824932BA600DA0F61 /* PCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCManager.m; sourceTree = "<group>"; };
+		A0457DCB24932BBD00DA0F61 /* iPhoneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneManager.swift; sourceTree = "<group>"; };
+		A0457DCC24932BBD00DA0F61 /* YKW-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YKW-Bridging-Header.h"; sourceTree = "<group>"; };
 		A0DEAD712121714D0050EC0B /* YKW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DEAD742121714D0050EC0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0DEAD752121714D0050EC0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,11 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0457DB7249316AC00DA0F61 /* iOS */ = {
+		A0457DC624932BA600DA0F61 /* PC */ = {
 			isa = PBXGroup;
 			children = (
-				A0457DB92493173100DA0F61 /* iPhoneManager.swift */,
-				A0457DB82493173100DA0F61 /* YKW-Bridging-Header.h */,
+				A0457DC724932BA600DA0F61 /* PCManager.h */,
+				A0457DC824932BA600DA0F61 /* PCManager.m */,
+			);
+			path = PC;
+			sourceTree = "<group>";
+		};
+		A0457DCA24932BBD00DA0F61 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A0457DCB24932BBD00DA0F61 /* iPhoneManager.swift */,
+				A0457DCC24932BBD00DA0F61 /* YKW-Bridging-Header.h */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -70,7 +82,8 @@
 		A0DEAD732121714D0050EC0B /* YKW */ = {
 			isa = PBXGroup;
 			children = (
-				A0457DB7249316AC00DA0F61 /* iOS */,
+				A0457DCA24932BBD00DA0F61 /* iOS */,
+				A0457DC624932BA600DA0F61 /* PC */,
 				A0DEAD742121714D0050EC0B /* AppDelegate.h */,
 				A0DEAD752121714D0050EC0B /* AppDelegate.m */,
 				A0DEAD772121714D0050EC0B /* ViewController.h */,
@@ -155,9 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0457DBA2493173100DA0F61 /* iPhoneManager.swift in Sources */,
 				A0DEAD792121714D0050EC0B /* ViewController.m in Sources */,
 				A0DEAD842121714F0050EC0B /* main.m in Sources */,
+				A0457DC924932BA600DA0F61 /* PCManager.m in Sources */,
+				A0457DCD24932BBD00DA0F61 /* iPhoneManager.swift in Sources */,
 				A0DEAD762121714D0050EC0B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
